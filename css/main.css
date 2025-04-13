@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: rgb(220, 231, 220);
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: fixed;
+  box-shadow: 0 3px 5px rgba(228, 220, 220, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.header-icon-container {
+  width: 100%;
+  height: 50 px;
+  display: grid;
+  background: linear-gradient(#360770, rgb(198, 150, 212));
+}
+
+.icons {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+}
+
+nav {
+  margin-top: 10px;
+  border-radius: 30px;
+  background: linear-gradient(#212024, rgb(105, 105, 102));
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.nav-logo-container {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main-container {
+  min-height: 100vh;
+  background-image: url("../assets/img-icons/fondo.jpg");
+  /* ajustar al div, corta si es necesario */
+  background-size: cover;
+  /* centra la imagen*/
+  background-position: center;
+  /* hace que el div tenga al menos el alto de toda la pantalla.*/
+  background-repeat: no-repeat;
+  color: aliceblue;
+  padding: 40px;
+  position: relative;
+}
+
+.overlay {
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 140px;
+  background-color: rgba(226, 17, 17, 0.5);
+  /* oscurece un poco el fondo para que el texto resalte */
+  padding: 80px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.information_here {
+  margin-top: 50px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: bisque;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+
+}
+
+.information_here:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4f46e5, #9209e2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about_him {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about_him:hover {
+  color: #a47ed3;
+}

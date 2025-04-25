@@ -64,12 +64,12 @@ body {
 
 .button_more {
   padding: 10px;
-  color: aliceblue;
+  color: rgb(2, 6, 10);
   margin-top: 30px;
   border: none;
   border-radius: 5px;
   background: none;
-  border: 2px solid rgb(11, 236, 225);
+  border: 2px solid rgb(120, 11, 236);
   cursor: pointer;
 }
 
@@ -80,27 +80,31 @@ body {
 
 .container-news {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1000px;
-  position: relative;
-  margin-top: 15px;
-  margin-left: 130px;
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1000px;
+  width: 100%;
+  gap: 20px;
+  margin: 0 auto;
+  /* hace que un contenedor se centre */
+  padding: 0 10px;
 }
 
 .cards-new {
   display: flex;
   flex-direction: column;
-  background-color: rgb(192, 163, 211);
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   padding: 20px;
+  background: #9BD3CB;
+  box-shadow: 0 50px 20px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
 }
 
 .space {
   width: 1000px;
-  position: relative;
-  margin-top: 15px;
-  margin-left: 130px;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .space>h1 {
@@ -116,6 +120,7 @@ body {
   background-repeat: no-repeat;
   height: 180px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .content-card {
